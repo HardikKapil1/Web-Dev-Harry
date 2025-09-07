@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* The specifity of this is 1 */
+      h1 {
+        color: aqua;
+      }
+      /* The specifity of this is 10+1=11 */
+      h1.yellow {
+        color: yellow;
+      }
+      /* The specifity of this is 10 */
+.cred {
+        color: red;
+        /* color: red !important; */
+      }
+      .cpurple {
+        color: purple;
+      }
+      /* The specifity of this is 10 */
+      [data-x="a"] {
+        background-color: aqua;
+      }
+      /* The specifity of this is 1+10+10+10+10=41 */
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+      /* attribute Selector */
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">CSS Specifity</h1>
+    </div>
+  </body>
+</html>
