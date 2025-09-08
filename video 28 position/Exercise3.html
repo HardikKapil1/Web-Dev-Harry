@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Card Design</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: gray;
+        padding: 45px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .card {
+        background-color: white;
+        width: 194px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .image {
+        padding: 5px;
+      }
+
+      .image img {
+        width: 100%;
+        border-radius: 7px;
+      }
+
+      .capsules {
+        padding: 0 12px;
+        margin-bottom: 8px;
+      }
+
+      .capsules span {
+        border: 1px solid black;
+        padding: 2px 8px;
+        border-radius: 7px;
+        font-size: 10px;
+        margin-right: 5px;
+        color: #555;
+      }
+
+      .content {
+        padding: 0 12px 10px 12px;
+      }
+
+      .content h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+
+      .content p {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .button {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .button button {
+        border-radius: 8px;
+        padding: 6px 12px;
+        background-color: lightblue;
+        color: blue;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .button button:hover {
+        background-color: lightsalmon;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img
+          src="https://media.istockphoto.com/id/1219780351/photo/businessman-looks-at-lighthouse-while-stranded-on-boat.jpg?s=2048x2048&w=is&k=20&c=A2lALZ1exwNFd_JDnAc6xEwVjQ_Kr6NL_Tt60Y8JUik="
+          alt="Nature"
+        />
+      </div>
+      <div class="capsules">
+        <span>Nature</span>
+        <span>Lake</span>
+      </div>
+      <div class="content">
+        <h2>Hardik</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor
+          ipsam iste nihil quam natus nam cupiditate cum.
+        </p>
+      </div>
+      <div class="button">
+        <button>Read More</button>
+      </div>
+    </div>
+  </body>
+</html>
