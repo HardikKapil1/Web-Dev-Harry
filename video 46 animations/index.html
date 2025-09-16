@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(230, 7, 7);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            height: 45px;
+            width: 35px;
+            /* background-color: aqua; */
+            /* animation: hardikkaanimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.48, 0.76, 0.19, 1.01);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; 
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation: hardikkaanimation 1s ease-in-out 3s 1 backwards,
+                                        hardik2 1s ease-in-out 3s 1;
+        }
+        @keyframes hardikkaanimation {
+            from{
+                background-color: rgb(7, 1, 1);
+
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+            
+        }
+        @keyframes hardik2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
