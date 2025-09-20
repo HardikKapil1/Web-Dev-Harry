@@ -1,6 +1,6 @@
 console.log("Hello I am conditional")
 
-let age=0;
+let age=18;
 let grace=2;
 
 
@@ -14,3 +14,7 @@ else if(age==0){
     console.log("you cannot drive")
 }
 console.log(age**grace)
+let a = 20;
+let b = 30;
+let c=a>b?(a-b):(b-a);
+console.log(c);
