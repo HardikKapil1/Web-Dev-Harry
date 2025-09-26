@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Scoop - Ice Cream Parlour</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f8;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #ff4da6;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar ul li {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .navbar ul li:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ff80bf, #ff99cc);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: white;
+      color: #ff4da6;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #ffe6f2;
+    }
+
+    /* Menu Section */
+    .menu {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #ff4da6;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+      background: #ff4da6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">🍦 Sweet Scoop</div>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Sweet Scoop</h1>
+    <p>Serving Happiness, One Scoop at a Time 🍨</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="menu" id="menu">
+    <h2>Our Bestsellers</h2>
+    <div class="menu-items">
+      <div class="card">
+        <img src="https://i.imgur.com/I9i9Z9T.jpg" alt="Vanilla Ice Cream">
+        <h3>Classic Vanilla</h3>
+        <p>₹80</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/JR3sQ8T.jpg" alt="Chocolate Ice Cream">
+        <h3>Choco Delight</h3>
+        <p>₹100</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/3bVv1kB.jpg" alt="Strawberry Ice Cream">
+        <h3>Strawberry Bliss</h3>
+        <p>₹90</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Sweet Scoop Ice Cream Parlour | Made with ❤️</p>
+  </div>
+</body>
+</html>
