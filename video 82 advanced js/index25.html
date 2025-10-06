@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch API Example</title>
+</head>
+<body>
+  <h2>Random Joke Generator 😂</h2>
+  <button id="btn">Get a Joke</button>
+  <p id="joke"></p>
+
+  <script>
+    const jokeText = document.getElementById("joke");
+    const btn = document.getElementById("btn");
+
+    async function getJoke() {
+      try {
+        const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+        const data = await response.json();
+
+        jokeText.innerText = `${data.setup} 😂 ${data.punchline}`;
+      } catch (error) {
+        jokeText.innerText = "Oops! Couldn't fetch a joke.";
+        console.error("error:", error);
+      }
+    }
+
+    btn.addEventListener("click", getJoke);
+  </script>
+</body>
+</html>
